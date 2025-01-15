@@ -1,7 +1,7 @@
 # Project: ''Universal'' Cipher Analyzer
 
 ## Project Description (English)
-**Universal Cipher Analyzer** is an ''advanced tool'' designed for analyzing and decrypting encrypted texts in English and Italian. This Python-based application leverages frequency analysis, language detection, and cipher-specific algorithms to provide accurate and efficient decryption. It supports various encryption methods, making it a versatile resource for developers, security enthusiasts, and cryptography students.
+**''Universal'' Cipher Analyzer** is an ''advanced tool'' designed for analyzing and decrypting encrypted texts in English and Italian. This Python-based application leverages frequency analysis, language detection, and cipher-specific algorithms to provide accurate and efficient decryption. It supports various encryption methods, making it a versatile resource for developers, security enthusiasts, and cryptography students.
 
 ### Key Features:
 1. **Multilingual Support**:

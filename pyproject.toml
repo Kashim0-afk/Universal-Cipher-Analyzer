@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "universal-cipher-analyzer"
+version = "2.0.0"
+description = "Caesar/ROT13, Atbash and Vigenère cryptanalysis (chi-squared, index of coincidence) with Italian/English detection, plus Base64/hex decoding."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Matteo Zordan" }]
+keywords = ["cryptography", "cryptanalysis", "caesar-cipher", "vigenere-cipher", "frequency-analysis"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "License :: OSI Approved :: MIT License",
+    "Environment :: Console",
+    "Topic :: Security :: Cryptography",
+    "Topic :: Education",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "ruff>=0.6"]
+
+[project.scripts]
+cipher-analyzer = "cipher_analyzer.cli:main"
+
+[project.urls]
+Repository = "https://github.com/Kashim0-afk/Universal-Cipher-Analyzer"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "W", "F", "I", "B", "UP", "SIM", "RUF"]

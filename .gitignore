@@ -23,3 +23,16 @@ env/
 .idea/
 .DS_Store
 Thumbs.db
+
+# --- audit 2026-09-28 ---
+# Secrets
+.env
+.env.*
+*.pem
+*.key
+*.pfx
+*.p12
+secrets.json
+# OS
+desktop.ini
+!.env.example
